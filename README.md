@@ -214,12 +214,12 @@ This project represents a unique blend of perspectives:
 <table>
   <tr>
     <td align="center" width="50%">
-      <h3>🇮🇳 India</h3>
-      <p><strong>Partner Universities</strong></p>
+      <h3>India</h3>
+      <p><strong>Christ Deemed To Be University</strong></p>
       <p>Various Indian institutions</p>
     </td>
     <td align="center" width="50%">
-      <h3>🇩🇪 Germany</h3>
+      <h3>Germany</h3>
       <p><strong>THWS</strong></p>
       <p>Technical University of Applied Sciences<br/>Würzburg-Schweinfurt</p>
     </td>
