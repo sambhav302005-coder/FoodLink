@@ -87,14 +87,14 @@ This project directly contributes to:
   <tr>
     <td><img src="screenshots/login.png" width="200" alt="Login Screen"/></td>
     <td><img src="screenshots/home.png" width="200" alt="Home Dashboard"/></td>
-    <td><img src="screenshots/donation.png" width="200" alt="Donation Form"/></td>
+    <td><img src="screenshots/donation_form.png" width="200" alt="Donation Form"/></td>
     <td><img src="screenshots/chat.png" width="200" alt="AI Chatbot"/></td>
   </tr>
   <tr>
-    <td align="center">Login Screen</td>
-    <td align="center">Home Dashboard</td>
-    <td align="center">Create Donation</td>
-    <td align="center">AI Chatbot</td>
+    <td align="center">🔐 Login Screen</td>
+    <td align="center">🏠 Home Dashboard</td>
+    <td align="center">📝 Create Donation</td>
+    <td align="center">💬 AI Chatbot</td>
   </tr>
 </table>
 
@@ -120,6 +120,7 @@ This project directly contributes to:
 - **IDE**: Android Studio
 - **Build System**: Gradle (Kotlin DSL)
 - **Version Control**: Git & GitHub
+- **Design**: Figma (UI/UX Prototyping)
 - **Collaboration**: Agile methodology across time zones
 
 ### Key Libraries
@@ -359,9 +360,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📸 Presentation & Demo
+## 📸 Presentation, Design & Demo
 
 📄 **[View Project Presentation](docs/FoodLink-Presentation.pdf)**  
+🎨 **[View Figma Design](https://www.figma.com/design/nFG19Vfagomt2btpqPXJUq/Untitled?node-id=0-1&t=WvSs79q4v3w5yyth-1)** - UI/UX Prototypes  
 🎥 **Demo Video**: Coming soon on YouTube!
 
 ---
