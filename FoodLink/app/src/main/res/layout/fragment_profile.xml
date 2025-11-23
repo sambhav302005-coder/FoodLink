@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cr"
+        tools:context=".ProfileFragment">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="462dp"
+            android:layout_height="459dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/bgbgbbgb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.254"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView4"
+            android:layout_width="165dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/pfp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="@string/your_profile"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/Goals"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_shape"
+            android:fontFamily="@font/adlam_display"
+            android:text="@string/goals"
+            android:textColor="@color/cream"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView4" />
+
+        <LinearLayout
+            android:id="@+id/scoreSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/Goals">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/score"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/donations"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/rounded_shape"
+            android:text="@string/your_info"
+            android:fontFamily="@font/adlam_display"
+            android:textColor="@color/cream"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scoreSection" />
+
+        <LinearLayout
+            android:id="@+id/userInfoSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/add">
+
+            <TextView
+                android:id="@+id/info24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_no"
+                android:textColor="@color/brown"
+                android:fontFamily="@font/adlam_display"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/username"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/password"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_shape"
+            android:fontFamily="@font/adlam_display"
+            android:text="@string/edit_address"
+            android:textColor="@color/cream"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/userInfoSection" />
+
+        <LinearLayout
+            android:id="@+id/addressSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/info"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/info00"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/street"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info77"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/city"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/state"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pin_code"
+                android:fontFamily="@font/adlam_display"
+                android:textColor="@color/brown"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logoutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_shape"
+            android:fontFamily="@font/adlam_display"
+            android:text="@string/logout"
+            android:textColor="@color/cream"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cr2">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="160dp"
+            android:layout_height="106dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Food Donation App Logo"
+            android:src="@drawable/finallogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/backButtonContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="Back"
+                android:src="@drawable/ic_back" />
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/donationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Donate Food"
+            android:textColor="@color/brown"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/donationSubtitle"
+            android:layout_width="252dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/adlam_display"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:text="Help us reduce food waste and feed those in need"
+            android:textColor="@color/blue"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/donationTitle" />
+
+        <ImageView
+            android:id="@+id/donationImage"
+            android:layout_width="200dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="36dp"
+            android:contentDescription="Donation Image"
+            android:src="@drawable/d11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/donationSubtitle" />
+
+        <ProgressBar
+            android:id="@+id/loadingProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/foodTypeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Food Type:"
+            android:textColor="@color/brown"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/donationImage" />
+
+
+
+        <Spinner
+            android:id="@+id/foodTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/adlam_display"
+            android:background="@drawable/rounded_edittext"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodTypeLabel" />
+
+        <TextView
+            android:id="@+id/quantityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Quantity (servings):"
+            android:textColor="@color/brown"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodTypeSpinner" />
+
+        <EditText
+            android:id="@+id/quantityEditText"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:fontFamily="@font/adlam_display"
+            android:hint="Enter quantity"
+            android:inputType="number"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantityLabel" />
+
+        <TextView
+            android:id="@+id/descriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Description:"
+            android:textColor="@color/brown"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantityEditText" />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="top|start"
+            android:fontFamily="@font/adlam_display"
+            android:hint="Describe the food you are donating"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionLabel" />
+
+        <TextView
+            android:id="@+id/foodPreferenceLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Food Preference:"
+            android:textColor="@color/brown"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionEditText" />
+
+        <RadioGroup
+            android:id="@+id/foodPreferenceRadioGroup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:fontFamily="@font/adlam_display"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodPreferenceLabel">
+
+            <RadioButton
+                android:id="@+id/veganRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:layout_weight="1"
+                android:text="Vegan"
+                android:textColor="@color/greyish"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/vegRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:layout_weight="1"
+                android:text="Vegetarian"
+                android:textColor="@color/greyish"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/nonVegRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/adlam_display"
+                android:text="Non-Vegetarian"
+                android:textColor="@color/greyish"
+                android:textSize="12sp" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/isPerishableCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="This food is perishable"
+            android:fontFamily="@font/adlam_display"
+            android:textColor="@color/brown"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foodPreferenceRadioGroup" />
+
+        <LinearLayout
+            android:id="@+id/expiryDateLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/isPerishableCheckBox">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:text="Expiry Date:"
+                android:textColor="@color/brown"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <DatePicker
+                android:id="@+id/expiryDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:textColor="@color/greyish"
+                android:datePickerMode="spinner" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitDonationButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded"
+            android:backgroundTint="@color/blue"
+            android:padding="12dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Submit Donation"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/expiryDateLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

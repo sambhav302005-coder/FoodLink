@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.IGP" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">#F57C00</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#FFB74D</item>
+        <item name="colorSecondaryVariant">#FFA726</item>
+        <item name="colorOnSecondary">#000000</item>
+        <item name="android:colorBackground">#FFF3E0</item>
+    </style>
+
+</resources>

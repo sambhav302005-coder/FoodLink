@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aboreto</item>
+        <item>@font/acme</item>
+        <item>@font/adlam_display</item>
+        <item>@font/amiri_quran</item>
+    </array>
+</resources>

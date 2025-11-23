@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cr2">
+
+    <ImageView
+        android:id="@+id/driverRegLogo"
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:src="@drawable/finallogo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/regTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/adlam_display"
+        android:text="Driver Registration"
+        android:textColor="@color/brown"
+        android:textSize="20sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/driverRegLogo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/regTitle"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/nameInput"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/nameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Full Name"
+                    android:padding="12dp"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailInput"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Email"
+                    android:padding="12dp"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordInput"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Password"
+                    android:padding="12dp"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phoneNumberInput"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/phoneNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Phone Number"
+                    android:padding="12dp"
+                    android:inputType="phone" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/vehicleTypeSpinner"
+                android:layout_width="240dp"
+                android:layout_height="48dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/rounded_edittext"
+                android:padding="12dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/vehicleNumberInput"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/vehicleNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Vehicle Number"
+                    android:padding="12dp"
+                    android:inputType="textCapCharacters" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/licenseNumberInput"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/licenseNumberEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Driver's License Number"
+                    android:padding="12dp"
+                    android:inputType="textCapCharacters" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/radiusInput"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/radiusEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="Service Radius (km)"
+                    android:inputType="number"
+                    android:padding="12dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/adlam_display"
+                android:text="Register as Driver"
+                android:textColor="@color/cream"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/backToLoginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/rounded"
+                android:fontFamily="@font/adlam_display"
+                android:text="Back To Login"
+                android:textColor="@color/cream"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

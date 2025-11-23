@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Shadow Effect (Offset to Bottom-Right) -->
+    <item android:bottom="6dp" android:right="6dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <solid android:color="#B0AAAAAA"/> <!-- Semi-transparent gray for soft shadow -->
+        </shape>
+    </item>
+
+    <!-- Main Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#F5F5F5"/> <!-- Background Color -->
+            <stroke android:width="2dp" android:color="@color/greyish"/> <!-- Border -->
+            <corners android:radius="20dp"/> <!-- Rounded Corners -->
+            <padding android:left="10dp" android:right="10dp"/>
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">IGP</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="Login">Login</string>
+    <string name="i_agree_with_the_terms_and_conditions">I agree with the terms and conditions</string>
+    <string name="register">Register</string>
+    <string name="address">address</string>
+    <string name="set_password">set password</string>
+    <string name="phone_number">phone number</string>
+    <string name="email2">email</string>
+    <string name="username">username</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? Register</string>
+    <string name="designcor">designcor</string>
+    <string name="type_of_food">Type of Food:</string>
+    <string name="addressses">Address:</string>
+    <string name="any_comments">Any Comments:</string>
+    <string name="is_it_yum">is it yum?</string>
+    <string name="vegetable_fruits_steak_etc">vegetable/fruits/steak etc</string>
+    <string name="number_of_servings">Number of Servings:</string>
+    <string name="vegan">Vegan</string>
+    <string name="cooked">Cooked</string>
+    <string name="packed">Packed</string>
+    <string name="uncooked">Uncooked</string>
+    <string name="veg">Veg</string>
+    <string name="non_veg">Non-Veg</string>
+    <string name="enter_your_username">✉️ Enter your username</string>
+    <string name="todo">TODO</string>
+    <string name="please_sign_in_to_contribute">Please sign in to contribute</string>
+    <string name="enter_your_password">🔑 Enter your password</string>
+    <string name="login21">Login</string>
+    <string name="app_logo">app_logo\n</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="goals">Goals</string>
+    <string name="score">Score:</string>
+    <string name="donations">Donations:</string>
+    <string name="your_info">Your Info</string>
+    <string name="change_password">Change Password</string>
+    <string name="name">Name:</string>
+    <string name="mobile_no">Mobile No:</string>
+    <string name="street">Street:</string>
+    <string name="city">City:</string>
+    <string name="state">State:</string>
+    <string name="pin_code">Pin Code:</string>
+    <string name="logout">Logout</string>
+    <string name="edit_address">edit_address</string>
+    <string name="todo2">todo2</string>
+    <string name="enter_your_email">✉️Enter your Email</string>
+    <!-- Add this to your res/values/strings.xml file -->
+    <string-array name="vehicle_types">
+        <item>Select vehicle type</item>
+        <item>Bicycle</item>
+        <item>Motorcycle</item>
+        <item>Car</item>
+        <item>Van</item>
+        <item>Truck</item>
+    </string-array>
+
+</resources>

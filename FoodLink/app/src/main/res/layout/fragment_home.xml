@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cr2"
+    android:foregroundGravity="center_vertical|center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/appLogo"
+                android:layout_width="219dp"
+                android:layout_height="132dp"
+                android:layout_marginTop="40dp"
+                android:contentDescription="Food Donation App Logo"
+                android:src="@drawable/finallogo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/welcomeMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/adlam_display"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="Welcome to FoodLink"
+                android:textColor="@color/brown"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.434"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appLogo" />
+
+            <TextView
+                android:id="@+id/subMessage"
+                android:layout_width="252dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/adlam_display"
+                android:gravity="center|center_horizontal|center_vertical"
+                android:text="Feed the Hungry, Reduce Food Waste."
+                android:textColor="@color/blue"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.61"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/welcomeMessage" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="218dp"
+                android:layout_height="207dp"
+                android:contentDescription="Food Donation App Logo"
+                android:src="@drawable/d11"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.554"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subMessage" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded"
+                android:backgroundTint="@color/lightblue"
+                android:fontFamily="@font/adlam_display"
+                android:text="Donate Now"
+                android:textColor="@color/cream"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.554"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/img" />
+
+            <!-- Action Cards Section -->
+            <TextView
+                android:id="@+id/actionCardsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/adlam_display"
+                android:text="Quick Actions"
+                android:textColor="@color/brown"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/button6" />
+
+            <LinearLayout
+                android:id="@+id/actionCardsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintTop_toBottomOf="@id/actionCardsTitle">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/orderHistoryCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/orange"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="Order History Icon"
+                            android:src="@drawable/ic_history" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/adlam_display"
+                            android:text="Donation History"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/trackLiveOrderCard"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/teal_700"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:contentDescription="Track Live Order Icon"
+                            android:src="@drawable/location" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/adlam_display"
+                            android:text="Track Live Donation"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/whyUseTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/adlam_display"
+                android:text="Why Use FoodLink?"
+                android:textColor="@color/teal_700"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/actionCardsContainer" />
+
+            <ImageView
+                android:id="@+id/vecc6"
+                android:layout_width="194dp"
+                android:layout_height="186dp"
+                android:contentDescription="Food Donation App Logo"
+                android:src="@drawable/vecc6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whyUseTitle" />
+
+            <TextView
+                android:id="@+id/whyUseMessage1"
+                android:layout_width="344dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="172dp"
+                android:fontFamily="@font/adlam_display"
+                android:lineSpacingExtra="8sp"
+                android:padding="16dp"
+                android:text=" Hassle-Free Food Donation 🌱"
+                android:textAlignment="center"
+                android:textColor="@color/lightblue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.971"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whyUseTitle" />
+
+            <ImageView
+                android:id="@+id/vecc4"
+                android:layout_width="177dp"
+                android:layout_height="189dp"
+                android:layout_marginTop="200dp"
+                android:contentDescription="Food Donation App Logo"
+                android:src="@drawable/vecc4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.54"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whyUseTitle" />
+
+            <TextView
+                android:id="@+id/whyUseMessage2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="140dp"
+                android:fontFamily="@font/adlam_display"
+                android:padding="16dp"
+                android:text="  Verified and Safe Deliveries 🤝"
+                android:textAlignment="center"
+                android:textColor="@color/lightblue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whyUseMessage1" />
+
+            <ImageView
+                android:id="@+id/vecc5"
+                android:layout_width="218dp"
+                android:layout_height="207dp"
+                android:layout_marginTop="396dp"
+                android:contentDescription="Food Donation App Logo"
+                android:src="@drawable/vecc5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.596"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whyUseTitle" />
+
+            <TextView
+                android:id="@+id/whyUseMessage3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="148dp"
+                android:fontFamily="@font/adlam_display"
+                android:padding="16dp"
+                android:text="  Real-Time Tracking "
+                android:textAlignment="center"
+                android:textColor="@color/lightblue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whyUseMessage2" />
+
+            <ImageView
+                android:id="@+id/vecc3"
+                android:layout_width="190dp"
+                android:layout_height="184dp"
+                android:layout_marginTop="600dp"
+                android:contentDescription="Food Donation App Logo"
+                android:src="@drawable/vecc3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.596"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whyUseTitle" />
+
+            <TextView
+                android:id="@+id/whyUseMessage4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="128dp"
+                android:fontFamily="@font/adlam_display"
+                android:padding="16dp"
+                android:text="Impactful Giving"
+                android:textAlignment="center"
+                android:textColor="@color/lightblue"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/whyUseMessage3" />
+
+            <!-- FAQ Section -->
+            <LinearLayout
+                android:id="@+id/faqContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                android:paddingTop="32dp"
+                app:layout_constraintTop_toBottomOf="@id/whyUseMessage4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/faqQuestion1"
+                        android:layout_width="294dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/orange"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/adlam_display"
+                        android:onClick="toggleAnswer1"
+                        android:padding="8dp"
+                        android:text="What is FoodLink?"
+                        android:textColor="@color/cream"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/faqAnswer1"
+                        android:layout_width="333dp"
+                        android:layout_height="112dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/lorange"
+                        android:fontFamily="@font/adlam_display"
+                        android:padding="8dp"
+                        android:text="FoodLink is a platform that helps you donate food directly to those in need, reducing food waste and helping fight hunger."
+                        android:textColor="@color/brown"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/faqQuestion2"
+                        android:layout_width="294dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/orange"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/adlam_display"
+                        android:onClick="toggleAnswer2"
+                        android:padding="8dp"
+                        android:text="How can I donate food?"
+                        android:textColor="@color/cream"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/faqAnswer2"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/lorange"
+                        android:fontFamily="@font/adlam_display"
+                        android:padding="8dp"
+                        android:text="You can donate food directly to individuals or organizations that accept food donations through the FoodLink platform."
+                        android:textColor="@color/brown"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/faqQuestion3"
+                        android:layout_width="294dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/orange"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/adlam_display"
+                        android:onClick="toggleAnswer3"
+                        android:padding="8dp"
+                        android:text="Is there a minimum donation amount?"
+                        android:textColor="@color/cream"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/faqAnswer3"
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/lorange"
+                        android:fontFamily="@font/adlam_display"
+                        android:padding="8dp"
+                        android:text="There is no minimum amount for food donations. Every donation, big or small, makes a difference."
+                        android:textColor="@color/brown"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/faqQuestion4"
+                        android:layout_width="294dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/orange"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/adlam_display"
+                        android:onClick="toggleAnswer4"
+                        android:padding="8dp"
+                        android:text="Where does my donation go?"
+                        android:textColor="@color/cream"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/faqAnswer4"
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:backgroundTint="@color/lorange"
+                        android:fontFamily="@font/adlam_display"
+                        android:padding="8dp"
+                        android:text="Your donation will go to individuals and organizations in need within your area, helping to reduce food waste and support those facing hunger."
+                        android:textColor="@color/brown"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/chatbotFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Chat with AI Assistant"
+        android:src="@drawable/chatb"
+        app:maxImageSize="40dp"
+        app:tint="@null" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

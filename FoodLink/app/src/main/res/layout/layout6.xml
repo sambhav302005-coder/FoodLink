@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cr"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewBackground"
+        android:layout_width="418dp"
+        android:layout_height="392dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/bgbgbbgb"
+        android:translationY="-50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="218dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/filogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMessage1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="You are an amazing human 🤗"
+        android:textColor="@color/brown"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMessage2"
+        android:layout_width="359dp"
+        android:layout_height="102dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="We are very grateful that you have volunteered to help with our deliveries."
+        android:textAlignment="center"
+        android:textColor="@color/brown"
+        android:textSize="22sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="243dp"
+        android:layout_height="278dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/d3"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMessage1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
