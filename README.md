@@ -81,14 +81,13 @@ This project directly contributes to:
 
 ## 📱 Screenshots
 
-> **Add your app screenshots here!** Create a `screenshots/` folder in your project.
 
 <table>
   <tr>
     <td><img src="screenshots/login.jpeg" width="200" alt="Login Screen"/></td>
     <td><img src="screenshots/dashboard.jpeg" width="200" alt="Home Dashboard"/></td>
     <td><img src="screenshots/donation.jpeg" width="200" alt="Donation Form"/></td>
-    <td><img src="screenshots/chat.png" width="200" alt="AI Chatbot"/></td>
+    <td><img src="screenshots/chat.jpeg" width="200" alt="AI Chatbot"/></td>
   </tr>
   <tr>
     <td align="center">🔐 Login Screen</td>
