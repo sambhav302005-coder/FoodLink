@@ -85,9 +85,9 @@ This project directly contributes to:
 
 <table>
   <tr>
-    <td><img src="screenshots/login.png" width="200" alt="Login Screen"/></td>
-    <td><img src="screenshots/home.png" width="200" alt="Home Dashboard"/></td>
-    <td><img src="screenshots/donation_form.png" width="200" alt="Donation Form"/></td>
+    <td><img src="screenshots/login.jpeg" width="200" alt="Login Screen"/></td>
+    <td><img src="screenshots/dashboard.jpeg" width="200" alt="Home Dashboard"/></td>
+    <td><img src="screenshots/donation.jpeg" width="200" alt="Donation Form"/></td>
     <td><img src="screenshots/chat.png" width="200" alt="AI Chatbot"/></td>
   </tr>
   <tr>
